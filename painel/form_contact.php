@@ -55,7 +55,7 @@
                                       Contato inserido com sucesso!
                                   </div>
                               <?php } ?>
-                              <form action="insert_contact.php" method="post">
+                              <form action="insert_contact.php" method="POST">
                                 <div class="form-group">
                                     <label for="exampleInputName">Name</label>
                                     <input type="text" class="form-control" placeholder="Your name" name="name" required autocomplete="off">                                 </div>

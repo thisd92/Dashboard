@@ -27,24 +27,24 @@
         <center>
           <img src="https://static.goomer.app/stores/102134/products/mobile_menu/templates/153659/logo_v1616627026.png" id="logo">
         </center><br><br>
-        <form>
+        <form action="./painel/_insert_users.php" method="POST">
           <div class="form-group">
             <label for="exampleInputEmail1">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div><br>
+            <input type="email" class="form-control" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password">
+            <input type="password" name="password" class="form-control" id="password">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Confirm Password</label>
-            <input type="password" class="form-control" id="confirm_password">
+            <input type="password" name="password2" class="form-control" id="confirm_password">
           </div><br>
           <button type="submit" class="btn btn-block btn-primary">Submit</button>
         </form><br>
 
         <center>
-          <a href="signup.php">Sign Up?</a>
+          <a href="index.php">Login?</a>
         </center>
       </div>
       <div class="col-md-4"></div>

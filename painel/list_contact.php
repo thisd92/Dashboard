@@ -121,7 +121,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <?php
-                                                    include 'conection.php';
+                                                    include 'conexao/conection.php';
                                                     $sql = "SELECT * FROM agenda";
                                                     $search = mysqli_query($conection,$sql);
 

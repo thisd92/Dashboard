@@ -27,14 +27,29 @@
         <center>
           <img src="https://static.goomer.app/stores/102134/products/mobile_menu/templates/153659/logo_v1616627026.png" id="logo">
         </center><br><br>
-        <form>
+        <form action="index1.php" method="POST">
+          <?php
+          if(isset($_GET['msg'])) {
+            $msg = $_GET['msg'];
+            if($msg == 1){?>
+              <div class="alert alert-info" role="alert">
+                Cadastrado com sucesso!
+              </div>
+            
+            <?php }else{ ?>
+              <div class="alert alert-danger" role="alert">
+                E-mail/Senha inválido.
+              </div>
+            
+            <?php } } ?>
+          
           <div class="form-group">
             <label for="exampleInputEmail1">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div><br>
+            <input type="email" name="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
           </div><br>
           <button type="submit" class="btn btn-block btn-primary">Submit</button>
         </form><br>
